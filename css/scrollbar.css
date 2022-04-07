@@ -1,0 +1,59 @@
+:root{
+    --color-1: #F29F05;
+    --color-2: #403012;
+    --color-3: #D97904;
+    --color-4: #A64F03;
+    --color-5: #0D0D0D;
+    --color-6: #181818;
+    --color-7: #282828;
+    --color-8: #a5a5a5;
+  }
+::-webkit-scrollbar{
+    width: 0;
+}
+#scrollPath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+
+}
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to top,var(--color-2),var(--color-3),var(--color-4));
+    animation: animate 5s linear infinite;
+}
+@keyframes animate {
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(10deg);
+    }
+}
+#progressbar:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,var(--color-2),var(--color-3));
+    filter: blur(10px);
+}
+#progressbar:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,var(--color-2),var(--color-3));
+    filter: blur(20px);
+}

@@ -1,0 +1,108 @@
+:root{
+    --color-1: #F29F05;
+    --color-2: #403012;
+    --color-3: #D97904;
+    --color-4: #A64F03;
+    --color-5: #0D0D0D;
+    --color-6: #181818;
+    --color-7: #282828;
+    --color-8: #a5a5a5;
+  }
+.home .home-main-text Button{
+    color: var(--color-1);
+    background-color: #181818;
+    font-size: 15px;
+    letter-spacing: 2.8px;
+    text-decoration: none;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    line-height: 40px;
+    display: block;
+    text-align: center;
+    border:2px solid var(--color-1);
+    transition: color 2.5s ease-in-out;
+    border-radius: 50% 5% /25%;
+    transition-delay: 0s;
+    -webkit-box-reflect: below 0px linear-gradient(transparent,#0002);
+    z-index: 100;
+    cursor: pointer;
+    opacity: 0;
+  transform: translateY(20px);
+  animation: fadeinUp .8s ease-in forwards;
+  animation-delay: .6s;
+  }
+
+  @keyframes fadeinUp{
+    
+  
+    to{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  .home .home-main-text Button:hover{
+    z-index: 100;
+    color: var(--color-5);
+    transition-delay: 2.5s;
+    transition: color 1.5s ease;
+    box-shadow: 0px 0px 10px var(--color-1),
+    0px 0px 20px var(--color-1),
+    0px 0px 40px var(--color-1);  border-radius: 50% 5% /25%;
+
+    
+  }
+
+
+
+
+  .home .home-main-text Button::before{
+      z-index: -100;
+    content: '';
+      position: absolute;
+      left: -18px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 12px;
+      height: 1.5px;
+      background: var(--color-1);
+      box-shadow: 5px -8px 0 var(--color-1), 5px 8px 0 var(--color-1);
+      transition: width 0.2s, left 0.2s, height 0.2s, box-shadow 0.2s;
+      transition-delay: .5s,0.2s,0s,0s;  border-radius: 50% 5% /25%;
+  }
+  .home .home-main-text Button:hover::before{
+    z-index: -100; 
+    width: 55%;
+      height: 110%;
+      left: -2px;
+      box-shadow: 5px 0px 0 var(--color-1), 5px 0px 0 var(--color-1);
+      transition-delay: 0s,0.2s,.5s,.5s;  border-radius: 50% 5% /25%;
+  }
+
+
+
+  .home .home-main-text Button::after{
+    content: '';
+    z-index: -100;
+    position: absolute;
+    right: -18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 1.5px;
+    background: var(--color-1);
+    box-shadow: -5px -8px 0 var(--color-1), -5px 8px 0 var(--color-1);
+    transition: width 0.2s, right 0.2s, height 0.2s, box-shadow 0.2s;
+    transition-delay: .5s,0.2s,0s,0s;  border-radius: 50% 5% /25%;
+}
+.home .home-main-text Button:hover::after{
+    width: 55%;
+    height: 110%;
+    z-index: -100;
+    right: -2px;
+    box-shadow: -5px 0px 0 var(--color-1), -5px 0px 0 var(--color-1);
+    transition-delay: 0s,0.2s,.5s,.5s;  border-radius: 50% 5% /25%;
+}

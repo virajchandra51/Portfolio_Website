@@ -1,0 +1,65 @@
+:root{
+    --color-1: #F29F05;
+    --color-2: #403012;
+    --color-3: #D97904;
+    --color-4: #A64F03;
+    --color-5: #0D0D0D;
+    --color-6: #181818;
+    --color-7: #282828;
+    --color-8: #a5a5a5;
+  }
+
+  .about{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem 3rem;
+    position: relative;
+    transition: opacity .4s;
+    min-height: 100vh;
+  }
+
+.about .text{
+    width: 40%;
+    padding-left: 3rem;
+}
+
+.about .text h1{
+    color: var(--color-1);
+    font-weight: 600;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 40px;
+    left: -10px;
+    font-size: 6rem;
+    line-height: 6.7rem;
+    
+}
+
+.about .text p{
+    position: relative;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.about .text p a{
+    color: var(--color-1);
+    text-decoration: none;
+    opacity: 1;
+    transition: opacity 0.6s ease;
+    
+}
+.about .text p a:hover{
+    opacity: 0.5;
+    
+}
+
+  
+
+ 
